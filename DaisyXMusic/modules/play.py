@@ -431,7 +431,7 @@ async def m_cb(b, cb):
                 callsmusic.pytgcalls.change_stream(
                     chet_id, callsmusic.queues.get(chet_id)["file"]
                 )
-                await cb.answer("Bở qua...")
+                await cb.answer("Bỏ qua...")
                 await cb.message.edit((m_chat, qeue), reply_markup=r_ply(the_data))
                 await cb.message.reply_text(
                     f"- Bài hát bị bỏ qua\n- Đang chơi **{qeue[0][0]}**"
@@ -594,8 +594,8 @@ async def play(_, message: Message):
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🎬 Mở Youtube", url=f"{url}"),
-                    InlineKeyboardButton(text="Tải xuống mp3 📥", url=f"{dlurl}"),
+                    InlineKeyboardButton(text="🎬 Nắng Cực", url="https://t.me/nangcuc"),
+                    InlineKeyboardButton(text="Kênh Sex 🔞", url="https://t.me/kenhsex"),
                 ],
                 [InlineKeyboardButton(text="❌ Đóng", callback_data="cls")],
             ]
@@ -677,8 +677,8 @@ async def play(_, message: Message):
                         InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                     ],
                     [
-                        InlineKeyboardButton(text="🎬 Mở YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="Tải về mp3 📥", url=f"{dlurl}"),
+                    InlineKeyboardButton(text="🎬 Nắng Cực", url="https://t.me/nangcuc"),
+                    InlineKeyboardButton(text="Kênh Sex 🔞", url="https://t.me/kenhsex"),
                     ],
                     [InlineKeyboardButton(text="❌ Đóng", callback_data="cls")],
                 ]
@@ -825,8 +825,8 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
             [
-                InlineKeyboardButton(text="🎬 Mở YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Tải xuống Mp3 📥", url=f"{dlurl}"),
+                    InlineKeyboardButton(text="🎬 Nắng Cực", url="https://t.me/nangcuc"),
+                    InlineKeyboardButton(text="Kênh Sex 🔞", url="https://t.me/kenhsex"),
             ],
             [InlineKeyboardButton(text="❌ Đóng", callback_data="cls")],
         ]
@@ -1210,8 +1210,8 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
             [
-                InlineKeyboardButton(text="🎬 Mở YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Tải xuống mp3 📥", url=f"{dlurl}"),
+                    InlineKeyboardButton(text="🎬 Nắng Cực", url="https://t.me/nangcuc"),
+                    InlineKeyboardButton(text="Kênh Sex 🔞", url="https://t.me/kenhsex"),
             ],
             [InlineKeyboardButton(text="❌ Đóng", callback_data="cls")],
         ]
@@ -1255,7 +1255,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ **Playing** ở đây bài hát được yêu cầu bởi {r_by.mention} thông qua @Sabo_iBot 😜",
+            caption=f"▶️ **Playing** ở đây bài hát được yêu cầu bởi {r_by.mention} thông qua @yeu69_bot 😜",
         )
         
         os.remove("final.png")
